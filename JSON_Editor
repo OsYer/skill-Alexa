@@ -1,0 +1,110 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "mi calculadora",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "HelloWorldIntent",
+                    "slots": [],
+                    "samples": [
+                        "hola",
+                        "como estás",
+                        "di hola mundo",
+                        "di hola",
+                        "hola mundo"
+                    ]
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "calcular",
+                    "slots": [
+                        {
+                            "name": "operacion",
+                            "type": "tipo_operacion"
+                        },
+                        {
+                            "name": "primer_numero",
+                            "type": "AMAZON.NUMBER"
+                        },
+                        {
+                            "name": "segundo_numero",
+                            "type": "AMAZON.NUMBER"
+                        }
+                    ],
+                    "samples": [
+                        "{operacion} coseno de {primer_numero}",
+                        "{operacion} tangente de {primer_numero}",
+                        "{operacion} seno de {primer_numero}",
+                        "{operacion} raiz de {primer_numero}",
+                        "{operacion} {primer_numero} entre {segundo_numero} ",
+                        "{operacion} {primer_numero} por {segundo_numero} ",
+                        "{operacion} {primer_numero} menos {segundo_numero} ",
+                        "{operacion} {primer_numero} mas {segundo_numero} "
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "tipo_operacion",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "raiz"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "tangente"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "coseno"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "seno"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "sumar"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "restar"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "multiplicar"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "dividir"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
